@@ -1,0 +1,7 @@
+[
+  {"id": "D001", "question": "哪个地区的销售额最高？", "expected_route": "revenue_by_region"},
+  {"id": "D002", "question": "按品类汇总收入", "expected_route": "revenue_by_category"},
+  {"id": "D003", "question": "最近几个月的销售趋势", "expected_route": "monthly_trend"},
+  {"id": "D004", "question": "退款订单有多少，状态如何分布？", "expected_route": "orders_by_status"},
+  {"id": "D005", "question": "给我一个业务概览", "expected_route": "business_overview"}
+]

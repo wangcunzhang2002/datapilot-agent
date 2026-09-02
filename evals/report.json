@@ -1,0 +1,38 @@
+{
+  "case_count": 5,
+  "route_accuracy": 1.0,
+  "execution_success_rate": 1.0,
+  "verification_pass_rate": 1.0,
+  "records": [
+    {
+      "id": "D001",
+      "route_correct": true,
+      "execution_success": true,
+      "verification_passed": true
+    },
+    {
+      "id": "D002",
+      "route_correct": true,
+      "execution_success": true,
+      "verification_passed": true
+    },
+    {
+      "id": "D003",
+      "route_correct": true,
+      "execution_success": true,
+      "verification_passed": true
+    },
+    {
+      "id": "D004",
+      "route_correct": true,
+      "execution_success": true,
+      "verification_passed": true
+    },
+    {
+      "id": "D005",
+      "route_correct": true,
+      "execution_success": true,
+      "verification_passed": true
+    }
+  ]
+}

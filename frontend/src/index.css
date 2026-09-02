@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  color: #0f172a;
+  background: #f5f7fa;
+  font-family:
+    Inter, "SF Pro Display", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: #f8fafc;
+}
+
+button,
+textarea,
+input {
+  font: inherit;
+}
+
+textarea,
+input {
+  min-width: 0;
+  max-width: 100%;
+}
+
+h1,
+p,
+blockquote {
+  overflow-wrap: anywhere;
+}
+
+::selection {
+  color: #0f172a;
+  background: #bfdbfe;
+}

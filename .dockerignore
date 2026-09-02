@@ -1,0 +1,16 @@
+.venv
+__pycache__
+.pytest_cache
+.pytest-tmp
+.ruff_cache
+node_modules
+dist
+runtime/*.db
+runtime/*.json
+.env
+.env.local
+.env.production
+.cache
+.huggingface
+.ollama
+.git

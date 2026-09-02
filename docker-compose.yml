@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8001:8000"
+    environment:
+      PORT: "8000"
+      AGENT_RUNTIME_DIR: /app/runtime
+    volumes:
+      - datapilot-runtime:/app/runtime
+
+volumes:
+  datapilot-runtime:

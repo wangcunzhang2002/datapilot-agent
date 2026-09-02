@@ -1,0 +1,32 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest-tmp/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+.vite/
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+
+# Runtime state and local model caches
+runtime/*.db
+runtime/*.json
+.cache/
+.huggingface/
+.ollama/
+.uv-cache/
+.pnpm-store/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
