@@ -2,7 +2,7 @@
 
 DataPilot 是一个面向业务同事的数据分析 Agent。用户提出自然语言问题后，工作流会检查数据契约、选择分析意图、生成受约束 SQL、调用 SQLite 工具、交叉校验汇总口径，并返回结论、图表、表格和完整轨迹。
 
-默认运行在 `deterministic-demo` 模式，不需要 API Key。配置 OpenAI-compatible 端点后，模型只负责在允许列表中选择分析意图；SQL 仍来自审查模板并经过工具层校验。这样既能演示真实模型调用，也保留可复现基线。
+默认运行在 `deterministic-demo` 模式，不需要 API Key。配置阿里云百炼千问的 OpenAI-compatible 端点后，模型只负责在允许列表中选择分析意图；SQL 仍来自审查模板并经过工具层校验。这样既能演示真实模型调用，也保留可复现基线。
 
 ![DataPilot 工作台](docs/ui-empty.png)
 
@@ -55,7 +55,7 @@ pnpm dev
 
 浏览器访问 `http://localhost:5173`，接口文档位于 `http://localhost:8001/docs`。
 
-可选模型模式：复制 `.env.example` 中的三个变量到当前 PowerShell 环境后再启动后端。不要提交真实 Key。若变量不完整，服务会明确回到离线基线。
+可选千问模式：将 `.env.example` 中的 `AGENT_LLM_BASE_URL`、`AGENT_LLM_API_KEY` 和 `AGENT_LLM_MODEL` 注入当前 PowerShell 或 Railway 服务环境；默认示例使用百炼兼容端点和 `qwen-plus`。不要提交真实 Key。若变量不完整，服务会明确回到离线基线。若 Key 属于特定地域或业务空间，请以百炼控制台提供的兼容模式地址为准。
 
 ## 公开演示防护
 
